@@ -3,11 +3,11 @@ import { NavLink, Route } from 'react-router-dom';
 import axios from 'axios';
 
 import Home from './components/book/home.js';
-// import Note from './components/book/Note.js';
-// import NotesList from './components/book/NotesList.js';
-// import NoteDeleteForm from './components/book/NoteDeleteForm.js';
-// import NotesForm from './components/book/NotesForm.js';
-// import NoteUpdateForm from './components/book/NoteUpdateForm.js';
+import Note from './components/book/note.js';
+import NotesList from './components/book/noteList.js';
+import NoteDeleteForm from './components/book/noteDelete.js';
+import NotesForm from './components/book/noteForm.js';
+import NoteUpdateForm from './components/book/noteUpdate.js';
 
 
 import './App.css';
@@ -56,13 +56,13 @@ class App extends Component {
         <div className="navigation-box">
           <nav className="nav">
             <NavLink exact to="/" className="navigation-buttons"> Home</NavLink>
-            {/* <NavLink exact to="/notes" className="navigation-buttons"> Notes</NavLink>
-            <NavLink  to="/newNotes" className="navigation-buttons">Make New Note</NavLink> */}
+            <NavLink exact to="/notes" className="navigation-buttons"> Notes</NavLink>
+            <NavLink  to="/newNotes" className="navigation-buttons">Make New Note</NavLink>
           </nav>
         </div>
           <main>
             <Route exact path="/" component={Home}></Route>
-            {/* <Route exact path="/notes" render={(props) =>
+            <Route exact path="/notes" render={(props) =>
               (<NotesList {...props} notes={this.state.notes} />)} />
             <Route path="/newNotes" render={(props) =>
               (<NotesForm {...props} makeNewNote={this.makeNewNote} />)} />  
@@ -71,7 +71,7 @@ class App extends Component {
             <Route path="/deleteNote/:id" render={(props) =>
               (<NoteDeleteForm {...props} deleteNote={this.deleteNote} />)} />
             <Route path="/updateNote/:id" render={(props) =>
-              (<NoteUpdateForm {...props} updateNote={this.updateNote} />)} /> */}
+              (<NoteUpdateForm {...props} updateNote={this.updateNote} />)} />
           </main>
       </div>
     );
