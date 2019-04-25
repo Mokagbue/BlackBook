@@ -6,4 +6,6 @@
 }
 .navigation-buttons {
   margin: 10px;
+  text-decoration: none;
+  color: black;
 }
