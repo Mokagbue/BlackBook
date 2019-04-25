@@ -56,8 +56,8 @@ class App extends Component {
         <div className="navigation-box">
           <nav className="nav">
             <NavLink exact to="/" className="navigation-buttons"> Home</NavLink>
-            <NavLink exact to="/notes" className="navigation-buttons"> Notes</NavLink>
-            <NavLink  to="/newNotes" className="navigation-buttons">Make New Note</NavLink>
+            <NavLink exact to="/notes" className="navigation-buttons">Pages</NavLink>
+            <NavLink  to="/newNotes" className="navigation-buttons">New Page</NavLink>
           </nav>
         </div>
           <main>
