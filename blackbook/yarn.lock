@@ -2290,6 +2290,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+
 clean-css@4.2.x:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.1.tgz#2d411ef76b8569b6d0c84068dabe85b0aa5e5c17"
@@ -3976,6 +3981,14 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
   integrity sha1-2uRqnXj74lKSJYzB54CkHZXAN4I=
+
+flipping-pages@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/flipping-pages/-/flipping-pages-2.1.2.tgz#0d7128bfd41d19e437413da7b72e4c7322c87f57"
+  integrity sha512-RQnKbbmRipzrVtHr9WOMJi1izpbjfUOHmeJPHen7g1/yZmIKm2RkQIbRqBc0wA37QeUgBzt5eogJ54MZF5t3Sg==
+  dependencies:
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
 
 flush-write-stream@^1.0.0:
   version "1.1.1"
