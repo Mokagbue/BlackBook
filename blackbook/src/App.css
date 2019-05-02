@@ -41,14 +41,16 @@
 /*...................................*/
 .App-pages {
   height: 480px;
-  width: 480px;
+  width: 380px;
   perspective: 960px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  border: 3px solid black;
 }
 
 .App-page {
