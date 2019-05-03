@@ -8,7 +8,7 @@ import NotesList from './components/book/noteList.js';
 import NoteDeleteForm from './components/book/noteDelete.js';
 import NotesForm from './components/book/noteForm.js';
 import NoteUpdateForm from './components/book/noteUpdate.js';
-import Tester from './components/book/tester.js'; 
+import Tester2 from './components/book/tester2.js'; 
 
 
 import './App.css';
@@ -59,7 +59,7 @@ class App extends Component {
             <NavLink exact to="/" className="navigation-buttons"> Home</NavLink>
             <NavLink exact to="/notes" className="navigation-buttons">Pages</NavLink>
             <NavLink  to="/newNotes" className="navigation-buttons">New Page</NavLink>
-            <NavLink  to="/tester" className="navigation-buttons">Tester</NavLink>
+            <NavLink  to="/tester" className="navigation-buttons">Tester2</NavLink>
           </nav>
         </div>
           <main>
@@ -75,7 +75,7 @@ class App extends Component {
             <Route path="/updateNote/:id" render={(props) =>
               (<NoteUpdateForm {...props} updateNote={this.updateNote} />)} />
             <Route path="/tester" render={(props) =>
-              (<Tester {...props}  />)} />
+              (<Tester2 {...props}  />)} />
           </main>
       </div>
     );
