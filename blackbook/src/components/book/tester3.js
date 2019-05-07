@@ -4,7 +4,8 @@ import axios from 'axios';
 import FlippingPages from 'flipping-pages'
 /* IMPORTANT */
 import 'flipping-pages/FlippingPages.css'
- 
+
+import Note from './components/book/note.js';
 import '../../App.css'
  
 class  Tester2 extends Component {
