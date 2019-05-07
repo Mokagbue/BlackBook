@@ -1,12 +1,9 @@
-console.log("Good morning, index.js is functioning just fine!!");
+console.log("Index.js is here!");
 
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const logger = require('morgan');
-const knex = require('knex');
-const knexConfig = require('./knexfile');
-const db = knex(knexConfig.development);
 
 const server = express();
 
@@ -16,15 +13,15 @@ server.use(cors());
 server.use(helmet());
 
 //routes
-const noteRoutes = require('./routes/noteRoutes.js');
-const userRoutes = require('./routes/userRoutes.js');
+// const noteRoutes = require('./routes/noteRoutes.js');
+// const userRoutes = require('./routes/userRoutes.js');
 
-server.use('/api/notes', noteRoutes);
-server.use('/api/users', userRoutes);
+// server.use('/api/notes', noteRoutes);
+// server.use('/api/users', userRoutes);
 
 //server tester message
 server.get('/', (req, res) => {
-    res.send('Working...working...working...');
+    res.send('Let\'s make some Magic!');
 });
 
 //port setup
