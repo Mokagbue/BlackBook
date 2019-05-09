@@ -12,7 +12,7 @@
     "helmet": "^3.18.0",
     "knex": "^0.16.5",
     "morgan": "^1.9.1",
-    "sqlite3" : "~3.1.4"
+    "sqlite3": "https://github.com/mapbox/node-sqlite3/tarball/master"
   },
   "devDependencies": {
     "nodemon": "^1.19.0"
