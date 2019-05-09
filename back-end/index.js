@@ -1,4 +1,4 @@
-console.log("Index.js is here!");
+console.log("Good morning, index.js is functioning just fine!!");
 
 const express = require('express');
 const cors = require('cors');
