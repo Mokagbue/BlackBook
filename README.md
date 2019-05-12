@@ -4,8 +4,12 @@
 BlackBook is a simple app that allows users to write a virtual book. 
 
 Project Goals:
+
 Page flipping, 
-cover choices,
+cover choices
+
+Super Goals:
+
 drawing pictures, 
 upload pictures
 
