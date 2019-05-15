@@ -15,9 +15,11 @@ server.use(helmet());
 //routes
 const noteRoutes = require('./routes/noteRoutes.js');
 const userRoutes = require('./routes/userRoutes.js');
+const bookRoutes = require('./routes/bookRoutes.js');
 
 server.use('/api/notes', noteRoutes);
 server.use('/api/users', userRoutes);
+server.use('/api/books', bookRoutes);
 
 //server tester message
 server.get('/', (req, res) => {
