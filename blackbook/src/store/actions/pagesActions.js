@@ -47,13 +47,13 @@ export const editPage = (id, page) => dispatch => {
 };
 
 export const deletePage = id => dispatch => {
-    dispatch({ type: DELETE_BOOKS_START });
+    dispatch({ type: DELETE_PAGES_START });
     axios
         .delete(`https://localhost:3000/api/pages/${id}`)
         .then(response => {
-            dispatch({ type: DELETE_BOOKS_SUCCESS, payload: response.data })
+            dispatch({ type: DELETE_PAGES_SUCCESS, payload: response.data })
         })
-        .catch(err => dispatch({ type: DELETE_BOOKS_FAILURE, payload: err }));
+        .catch(err => dispatch({ type: DELETE_PAGES_FAILURE, payload: err }));
 };
 
 export const fetchSinglePage = id => dispatch => {
