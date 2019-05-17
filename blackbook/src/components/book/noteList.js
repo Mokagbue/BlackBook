@@ -12,7 +12,7 @@ function NotesList(props) {
                             <Link to={`/notes/${note.id}`}>
                                 <h3 className="note-title">{note.notes_title}</h3>
                             </Link>
-                            <p clasName="note-content">{note.notes_content}</p>
+                            <p className="note-content">{note.notes_content}</p>
                         </div>
                     ))}
                 </div>
@@ -22,7 +22,7 @@ function NotesList(props) {
                             <Link to={`/notes/${note.id}`}>
                                 <h3 className="note-title">{note.notes_title}</h3>
                             </Link>
-                            <p clasName="note-content">{note.notes_content}</p>
+                            <p className="note-content">{note.notes_content}</p>
                         </div>
                     ))}
                 </div>
