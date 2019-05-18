@@ -79,7 +79,7 @@ class App extends Component {
             <Route path="/tester" render={(props) =>
               (<Tester2 {...props}  />)} />
             <Route path="/tbcontent" render={(props) =>
-              (<TBContents {...props}  />)} />
+              (<TBContents {...props} notes={this.state.notes} />)} />
           </main>
       </div>
     );
