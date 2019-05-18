@@ -93,6 +93,7 @@ class  Tester2 extends Component {
                     <div className="App-page App-page_orange">3</div>
                 </FlippingPages>
                 {/* Buttons are required for keyboard navigation */}
+                {/* Need to add next function so going to the next page goes to the next note*/}
                 <button
                     onClick={this.previous}
                     disabled={!this.state.selected}
