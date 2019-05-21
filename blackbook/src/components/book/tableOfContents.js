@@ -8,7 +8,7 @@ function TBContents(props) {
             <div className="book-wrap">
                 {props.books.map((books, index) => (
                     <div key={index} className="book-card">
-                        <Link to={`/books/${books.id}`}>
+                        <Link to={`/pages/${books.pages_id}`}>
                             <h3 className="book-title">{books.authorname}</h3>
                         </Link>
                     </div>
