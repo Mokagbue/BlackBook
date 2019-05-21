@@ -6,10 +6,10 @@ function TBContents(props) {
         <div className="tbcBox">
             <h1 className="tbc-title">Table of Contents</h1>
             <div className="book-wrap">
-                {this.state.books.map((book, index) => (
+                {props.books.map((books, index) => (
                     <div key={index} className="book-card">
-                        <Link to={`/books/${book.id}`}>
-                            <h3 className="book-title">{book.books_title}</h3>
+                        <Link to={`/books/${books.id}`}>
+                            <h3 className="book-title">{books.authorname}</h3>
                         </Link>
                     </div>
                 ))}
@@ -18,3 +18,4 @@ function TBContents(props) {
     );
 }
 export default TBContents;
+
