@@ -19,7 +19,7 @@ export const SINGLE_BOOKS_FAILURE = 'SINGLE_BOOKS_FAILURE';
 export const getBooks = id => dispatch => {
     dispatch({ type: FETCH_BOOKS_START });
     axios
-    .get(`https://localhost:3000/api/books/${id}`)
+    .get(`https://localhost:3000/api/books`)
     .then(response => {
         dispatch({ type: FETCH_BOOKS_SUCCESS, payload: response.data })
     })
@@ -29,7 +29,7 @@ export const getBooks = id => dispatch => {
 export const addBooks = book => dispatch => {
     dispatch({ type: ADD_BOOKS_START });
     axios
-        .post("https://localhost:3000/api/books/feelings", book)
+        .post("https://localhost:3000/api/books", book)
         .then(response => {
             dispatch({ type: ADD_BOOKS_SUCCESS, payload: response.data });
         })
