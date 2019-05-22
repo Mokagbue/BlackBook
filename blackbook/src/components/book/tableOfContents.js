@@ -6,9 +6,9 @@ function TBContents(props) {
         <div className="tbcBox">
             <h1 className="tbc-title">Table of Contents</h1>
             <div className="book-wrap">
-                {props.books.map((books, index) => (
-                    <div key={index} className="book-card">
-                        <Link to={`/pages/${books.pages_id}`}>
+                {props.books.map((books, id) => (
+                    <div key={id} className="book-card">
+                        <Link to={`/pages/${books.id}`}>
                             <h3 className="book-title">{books.authorname}</h3>
                         </Link>
                     </div>
