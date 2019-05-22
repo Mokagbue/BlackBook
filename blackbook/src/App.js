@@ -10,7 +10,7 @@ import NotesForm from './components/book/noteForm.js';
 import NoteUpdateForm from './components/book/noteUpdate.js';
 import Tester2 from './components/book/tester2.js';
 import TBContents from './components/book/tableOfContents.js'; 
-
+import Pages from './components/book/pages.js';
 
 import './App.css';
 
@@ -62,6 +62,7 @@ class App extends Component {
             <NavLink  to="/newNotes" className="navigation-buttons">New Page</NavLink>
             <NavLink  to="/tester" className="navigation-buttons">Tester2</NavLink>
             <NavLink  to="/tbcontent" className="navigation-buttons">Table of Contents</NavLink>
+            <NavLink  to="/pages" className="navigation-buttons">pages</NavLink>
           </nav>
         </div>
           <main>
@@ -80,6 +81,8 @@ class App extends Component {
               (<Tester2 {...props}  />)} />
             <Route path="/tbcontent" render={(props) =>
               (<TBContents {...props} books={this.state.books} />)} />
+            <Route path="/pages:id" render={(props) =>
+              (<Pages {...props} />)} />
           </main>
       </div>
     );
